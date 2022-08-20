@@ -14,6 +14,7 @@ try{
 }
 app.use(express.json())
 app.use(cors())
+app.use(express.static('build'))
 app.use('/api/signup',signupRouter)
 app.use('/api/login',loginRouter)
 app.use('/api/maze',mazeRouter)
